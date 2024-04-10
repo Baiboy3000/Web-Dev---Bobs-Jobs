@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bob's Jobs</title> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" type="text/css" href="style.css">  
+        <!-- Include Handlebars from a CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+        <script src="main.js" type=module defer></script>
+    </head>
+
+    <body>
+        <header>
+        </div>
+        <a href="./#" class= "logo"><h1>Bob's Jobs</h1>  </a>
+        <div id="container">
+            <div class="steam" id="steam1"> </div>
+            <div class="steam" id="steam2"> </div>
+            <div class="steam" id="steam3"> </div>
+            <div class="steam" id="steam4"> </div>
+          
+            <div id="cup">
+              <div id="cup-body">
+                <div id="cup-shade"></div>
+              </div>
+              <div id="cup-handle"></div>
+            </div>
+          
+            <div id="saucer"></div>
+          
+            <div id="shadow"></div>
+        </div>
+        <div>
+            <div id="content">
+            <div class="page-header-main">
+                <nav class="main-nav">
+                    <ul class ="main-menu">
+                        
+                        <li class= 'pagelink' id="Home"><a href="./#">Home</a></li>
+                        <li class= 'pagelink' id="About"><a href="./#!/about">About Us</a></li>
+                        <li class= 'pagelink' id="Help"><a href="./#!/help">Applicant Help</a></li>
+                    </ul>
+                </nav>
+            
+            
+            </div>
+
+            <div>
+                <form id="form"> 
+                    <input type="search" id="search" name="search" placeholder="Search...">
+                    <button id="searchbutton"  onsubmit="loadSearch()">Submit </button>
+                </form>
+            </div>
+
+            <form id="login-form">
+                <label for=username> Username: </label>
+                <input name=username>
+                <label for=password> Password: </label>
+                <input name=password type=password type="hidden" autocomplete="on">
+                <input id="loginbutton" type=submit onsubmit="loginSuccess()" >
+              </form>
+
+            <div>
+                <button id="toggleLDMode">Toggle</button>   
+            </div>
+            </div>
+            
+        </header>
+
+        
+        <div id='main'></div>  
+
+        <footer id="footer">
+            <p id="copyright">Copyright &copy; COMP2110 Web Designers, 2022.</p>
+            <p id="attribution">Bob's Jobs is a service of Bob Bobalooba Enterprises.</p>
+        </footer>
+    </body>
+
+</html>
